@@ -9,13 +9,16 @@ export class ProductService {
 
   products: Product[] = [
     {
-      name: 'OtisPM'
+      name: 'OtisPM',
+      imageUrl: 'http://www.pollex.com.tw/dist/assets/images/web-homepage-otis-01B.jpg'
     },
     {
-      name: 'OtisAM'
+      name: 'OtisAM',
+      imageUrl: 'http://www.pollex.com.tw/dist/assets/images/web-homepage-service-01B.png'
     },
     {
-      name: 'OtisBM'
+      name: 'OtisBM',
+      imageUrl: 'http://www.pollex.com.tw/dist/assets/images/web-homepage-blog-01B.png'
     }
   ];
 
