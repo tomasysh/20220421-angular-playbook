@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductComponent implements OnInit {
 
+  imgTitle = '圖片標題';
+
   constructor() { }
 
   ngOnInit(): void {
