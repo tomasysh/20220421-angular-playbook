@@ -10,6 +10,12 @@ export class ProductService {
   products: Product[] = [
     {
       name: 'OtisPM'
+    },
+    {
+      name: 'OtisAM'
+    },
+    {
+      name: 'OtisBM'
     }
   ];
 

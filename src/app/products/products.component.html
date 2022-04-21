@@ -1,5 +1,13 @@
 <button class="btn btn-primary" type="button">Add Product</button>
 
-<pre>
-  {{ products | json }}
-</pre>
+<ng-container *ngIf="products.length > 0; else tNoData">
+  <div class="container bg-secondary p-5">
+    <div class="row">
+        <app-product class="col-6 g-3" *ngFor="let product of products"></app-product>
+    </div>
+  </div>
+</ng-container>
+
+<ng-template #tNoData>
+  No Products :(
+</ng-template>
