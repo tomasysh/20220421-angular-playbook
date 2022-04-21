@@ -23,6 +23,8 @@ export class ProductsComponent implements OnInit {
 
   addToCart(productId: number): void {
     console.log('first', this.buyProducts);
+    // this.buyProducts.push(productId);
+    // 解構賦值 (概念是 不可變物件)
     this.buyProducts = [...this.buyProducts, productId];
     console.log('first', this.buyProducts);
 
