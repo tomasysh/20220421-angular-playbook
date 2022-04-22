@@ -29,4 +29,8 @@ export class ProductComponent implements OnInit {
     this.onAddToCart.emit(this.product.id);
   }
 
+  submitData(data: any): void {
+    console.log('data', data);
+  }
+
 }

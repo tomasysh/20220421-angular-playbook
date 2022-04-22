@@ -5,7 +5,10 @@
   <img [src]="product.imageUrl" class="card-img-top" [title]="imgTitle">
   <div class="card-body">
     <h5 class="card-title">{{ product.name }}</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <form (ngSubmit)="submitData(tForm.value)" #tForm="ngForm">
+      <input type="text" [(ngModel)]="imgTitle" name="title" required />
+      <button type="submit">SUBMIT</button>
+    </form>
     <a class="btn btn-primary" (click)="selectProduct()">Add to Cart</a>
 
   </div>

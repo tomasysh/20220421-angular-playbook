@@ -1,3 +1,4 @@
+import { CartComponent } from './cart/cart.component';
 import { PageErrorComponent } from './page-error/page-error.component';
 import { ProductsComponent } from './products/products.component';
 import { NgModule } from '@angular/core';
@@ -7,6 +8,10 @@ const routes: Routes = [
   {
     path: 'products',
     component: ProductsComponent
+  },
+  {
+    path: 'cart',
+    component: CartComponent
   },
   {
     path: '',
