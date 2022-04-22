@@ -31,12 +31,17 @@ export class ProductsComponent implements OnInit {
       console.log('pokemons', res);
     })
 
-    this.pokemonService.getPokemonDetail().subscribe((res) => {
-      console.log('detail', res.sprites);
-      this.imgSrcBack = res.sprites.back_default;
-      this.imgSrcFront = res.sprites.front_default;
+    this.pokemonService.getPokemonDetail().subscribe(
+    (next) => {
+      console.log('detail', next.sprites);
+      this.imgSrcBack = next.sprites.back_default;
+      this.imgSrcFront = next.sprites.front_default;
       this.imgSrc = this.imgSrcBack;
-    })
+    },
+    (err: any) => {
+      alert(`some error ocurred :(, ${err.message})`)
+    }
+    )
   }
 
 
